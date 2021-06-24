@@ -1,0 +1,380 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    display: block;
+}
+
+/* CSS WARNA BACKGROUND */
+.bg {
+    background: #30bab6;
+    background: linear-gradient(
+      356deg,
+      #009efd 26%,
+      #2af598 100%
+    );
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    padding-top: 30px;
+    min-height: 100%;
+}
+
+/* CSS NAVBAR */
+.header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 85px 50px 80px;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 50px;
+}
+
+
+.sosmed .sosm1 {
+    color: white;
+    padding-left: 15px;
+    font-size: 30px;
+    background-color: transparent;
+    justify-content: center;
+
+}
+
+/* CSS UTAMA */
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.main .judul {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-bottom: 60px;
+    padding-top: 35px;
+}
+
+.judul p {
+    font-family: Poppins-Regular;
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.judul h3 {
+    font-family: Poppins-Bold;
+    font-size: 60px;
+    color: #fff;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+/* ANIMASI TEXT */
+
+.judul p, h4, .mantap {
+    -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    } 
+
+.judul h3, h2 {
+    -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fadeInLeft {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
+
+.judul h2 {
+    font-size: 45px;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
+/* PUNYANYA FORM LOGIN */
+.form {
+    height: 320px;
+    border-radius: 10px;
+    background-color: white;
+    width: 400px;
+    max-width: 100%;
+    padding: 50px 45px 18px 45px ;
+    align-items: center;
+}
+
+.form, .mantap {
+    -webkit-animation-name: bounceInRight;
+    animation-name: bounceInRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes bounceInRight {
+    0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+    }
+    75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+    }
+    90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+    }
+    100% {
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes bounceInRight {
+    0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+    }
+    75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+    }
+    90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+    }
+    100% {
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
+
+.form h3 {
+    text-align: center;
+    color: darkgray;
+    display: block;
+    margin-bottom: 1cm;
+    font-weight: bold;
+}
+
+ 
+  .form h2 {
+    color: #5d5d5d;
+    font-family: 'open sans condensed';
+    font-size: 1.35em;
+    display: block;
+    background: #2a2a2a;
+    width: 100%;
+    text-transform: uppercase;
+    padding: .75em 1em .75em 1.5em;
+    box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.050000000000000044);
+    border: 1px solid #1d1d1d;
+    margin: 0;
+    font-weight: 200;
+  }
+  .form input {
+    display: block;
+    margin: auto auto;
+    width: 100%;
+    margin-bottom: 2em;
+    padding: .5em 0;
+    border: none;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 1.25em;
+    color: #757575;
+  }
+  .form input:focus {
+    outline: none;
+  }
+  .form .btn {
+    display: inline-block;
+    background: #1fb5bf;
+    border: 1px solid #1ba0a9;
+    border-radius: 15px;
+    padding: .5em 2em;
+    color: white;
+    margin-right: .5em;
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.19999999999999996);
+  }
+  .form .btn:hover {
+    background: #23cad5;
+  }
+  
+
+  /* CSS MODAL PENGUMUMAN */
+  .pengumum {
+    font-size: 30px; color:white
+  }
+
+  /* CSS BACKGROUND HALAMAN DASHBOARD SAMA PENGUMUMAN */
+  .bg2 {
+    background: linear-gradient(321deg, #2af598, #009efd, #00effd, #8400fd);
+    background-size: 800% 800%;
+    -webkit-animation: background2 15s ease infinite;
+    -moz-animation: background2 15s ease infinite;
+    animation: background2 15s ease infinite;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    padding-top: 30px;
+  }
+
+  @-webkit-keyframes background2 {
+    0%{background-position:0% 33%}
+    50%{background-position:100% 68%}
+    100%{background-position:0% 33%}
+}
+@-moz-keyframes background2 {
+    0%{background-position:0% 33%}
+    50%{background-position:100% 68%}
+    100%{background-position:0% 33%}
+}
+@keyframes background2 {
+    0%{background-position:0% 33%}
+    50%{background-position:100% 68%}
+    100%{background-position:0% 33%}
+}
+
+/* CSS TOMBOL BUKA PENGUMUMAN */
+.mantap {
+    width: 10cm;
+    border:none;
+    border-radius: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 6px;
+    background: linear-gradient(266deg, #4ab202, #8400fd, #fd0024);
+    background-size: 600% 600%;
+    -webkit-animation: background2 13s ease infinite;
+    -moz-animation: background2 13s ease infinite;
+    -o-animation: background2 13s ease infinite;
+    animation: background2 13s ease infinite;
+    transition: transform .2s;
+}
+
+.mantap:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+.main a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.card .card-body {
+    padding: 2cm 2cm;
+}
+
+
+/* MEDIA QUERY */
+@media (max-width: 576px) {
+    .header {
+        padding-left: 20px;
+    padding-right: 14px;
+    padding-bottom: 50px;
+    }
+    .judul h3 {
+        font-family: Poppins-Bold;
+        font-size: 50px;
+        color: #fff;
+        line-height: 1.1;
+        text-transform: uppercase;
+    }
+    .pengumum {
+        text-align: center;
+        font-size: 30px; color:white
+      }
+    .mantap {
+        width: 6cm;
+        font-size: 20px;
+        padding: 8px 4px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        margin-bottom: 2cm;
+    }
+    .main .judul {
+        align-items: center;
+    }
+    .bg {
+        height: auto;
+    }
+}
+
